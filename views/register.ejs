@@ -1,0 +1,27 @@
+<div class="register-form">
+    <div class="alert-box"> 
+
+    </div>
+
+    <div class="user-icon">
+        <img src="/Icons/avatar.png">
+    </div>
+
+    <div class="form-group">
+        <form action="/user/register" method="POST">
+            <label for="Email">Email</label>
+            <input type="email" name="email" placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password" value="<%= typeof password != 'undefined' ? password : '' %>">
+            <label for="password2">Retype Password</label>
+            <input type="password" name="password2" placeholder="Confirm Password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+            <input type="submit" value="Register">
+            <h5>Already Have? <a href="/user/login" style="color: dodgerblue;">Account</a></h5>
+        </form>
+    </div>
+
+    <div class="alert alert-success alert-dismissible">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>Success!</strong>
+    </div>
+</div>

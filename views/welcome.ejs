@@ -1,0 +1,30 @@
+<div class="bg_image">
+    <div class="icon-img">
+        <img src="/Icons/round.png">
+        <img src="/Icons/check.png">
+        <img src="/Icons/button.png">
+    </div>
+    <h2>Sweet Alert</h2>
+    <p>This example is to show 
+        how sweet alert can be use
+        in login/singnup.
+    </p>
+    <button class="btn_style" onclick="jumptosignup();">Click Here</button>
+</div>
+
+<script>
+    function jumptosignup(){
+        swal({
+            title:"Welcome",
+            text:"Example of SweetAlert",
+            icon:"success",
+            buttons:true
+        }).then((jump)=>{
+            if(jump){
+            window.location="/user/register"
+            }else{
+              swal("You Press Cancel")  
+            }
+        });
+    }
+</script>

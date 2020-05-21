@@ -1,0 +1,55 @@
+.bg_image{
+    text-align: center;
+    transform: translate(0%,50%);
+    height: 400px;
+    font-weight: bold;
+}
+.icon-img img{
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.btn_style{
+    border: 0px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    padding: 10px;
+    color: white;
+}
+
+/*Signup and Login Page*/ 
+.register-form,.login-form{
+     width: 30%;
+     transform: translate(120%,40%);
+ }
+
+.user-icon{
+    text-align: center;
+}
+ .user-icon img{
+    height: 50px;
+    width: 50px;
+ }
+
+ input[type=email],input[type=password]{
+     width: 100%;
+     padding: 5px;
+}
+
+ input[type=submit]{
+     margin-top: 5px;
+     width: 100%;
+     border: 0px;
+     padding: 5px;
+     background-color: dodgerblue;
+     color: white;
+     font-weight: bold;
+ }
+
+ @media only screen and (max-width:700px){
+    .register-form,.login-form{
+        transform: translate(0%,30%);
+        width: 100%;
+    }
+ }
